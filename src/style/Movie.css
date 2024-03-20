@@ -1,0 +1,153 @@
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+.movie-main {
+    width: 100%;
+    height: 82.4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: slideInFromLeft;
+    animation-duration: 0.5s; /* Adjust time as needed */
+    animation-fill-mode: forwards; /* Keeps the component at the final state */
+    position: relative; /* Or absolute, depending on your layout */
+    left: 50%;
+    transform: translateX(-50%); /* Center the component */
+}
+
+.cover-movie {
+    border-radius: 0.4rem;
+    width: 95%;
+    height: 95%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cover-movie-extra {
+    border-radius: 0.4rem;
+    width: 98%;
+    min-height: 87%;
+    max-height: 98%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.info-div {
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.745);
+    height: 85%;
+    display: flex;
+    align-items: center;
+    border-radius: 0.4rem;
+    padding: 0 2rem;
+}
+
+.movie-picture {
+    border-radius: 0.4rem;
+    width: 16rem;
+    height: 24rem;
+}
+.name {
+    margin-bottom: 1.5rem;
+}
+.info {
+    margin: 0.5rem 0;
+}
+.dif{
+    display: flex;
+    align-items: baseline;
+}
+.title {
+    margin-right: 0.35rem;
+}
+.value {
+    font: 1.2em sans-serif;
+}
+.description {
+    font: 1.1em sans-serif;
+    margin: 0.5rem 0;
+}
+.play {
+    margin-inline: 1rem 0;
+    padding-inline: 0.4rem 0;
+    min-width: 7rem;
+    min-height: 7rem;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.play:hover {
+    transform: scale(1.1);
+}
+.play:active {
+    transition: 0s;
+    background-color: rgb(1, 1, 140);
+}
+.infos {
+    width: 55rem;
+    margin-inline: 2rem 0;
+}
+
+
+.infos-extra {
+    max-width: 22rem;
+}
+
+.info-div-extra {
+    width: 75%;
+    background-color: rgba(255, 255, 255, 0.634);
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    border-radius: 0.4rem;
+    padding: 0 2rem;
+    max-height: 40rem;
+    overflow-x: scroll;
+}
+
+.play-extra {
+    all: unset;
+    padding: 0.5rem 1rem;
+    background-color: blue;
+    width: 9.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 2rem;
+    margin: 1rem 0;
+    transition: 0.3s ease-in-out;
+}
+.play-extra:hover {
+    transform: scale(1.1);
+}
+.play-extra:active {
+    transition: 0s;
+    background-color: rgb(1, 1, 140);
+}
+.play-btn-extra {
+    font-size: 1.4rem;
+    color: white;
+}
+.description-extra {
+    font: 1.1em sans-serif;
+    margin: 0.5rem 0;
+    max-width: 22rem;
+}

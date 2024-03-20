@@ -1,0 +1,106 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+}
+
+.loader {
+  --dim: 5rem;
+  width: var(--dim);
+  height: var(--dim);
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  animation: spin988 2s linear infinite;
+}
+
+.loader .circle {
+  --color: blue;
+  --dim: 1.8rem;
+  width: var(--dim);
+  height: var(--dim);
+  background-color: var(--color);
+  border-radius: 50%;
+  position: absolute;
+}
+
+.loader .circle:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+
+.loader .circle:nth-child(2) {
+  top: 0;
+  right: 0;
+}
+
+.loader .circle:nth-child(3) {
+  bottom: 0;
+  left: 0;
+}
+
+.loader .circle:nth-child(4) {
+  bottom: 0;
+  right: 0;
+}
+
+@keyframes spin988 {
+0% {
+  transform: scale(1) rotate(0);
+}
+
+20%, 25% {
+  transform: scale(1.3) rotate(90deg);
+}
+
+45%, 50% {
+  transform: scale(1) rotate(180deg);
+}
+
+70%, 75% {
+  transform: scale(1.3) rotate(270deg);
+  }
+
+  95%, 100% {
+  transform: scale(1) rotate(360deg);
+  }
+}
+
+.error {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  background: #EF665B;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px -3px #111;
+  position: absolute;
+  right: 35%;
+  top: 40%;
+}
+
+.error__icon {
+  width: 20px;
+  height: 20px;
+  transform: translateY(-8px);
+  margin-right: 25px;
+}
+
+.error__icon path {
+  fill: #fff;
+}
+
+.error__title {
+  font-weight: 500;
+  font-size: 2rem;
+  color: #fff;
+}

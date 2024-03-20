@@ -1,0 +1,119 @@
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.movie-card {
+    background-color: rgba(255, 255, 255, 0.337);
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0.7rem;
+    cursor: pointer;
+    animation-name: fadeIn;
+    animation-duration: 0.6s; /* Adjust the time as needed */
+    animation-fill-mode: both;
+}
+
+.extra-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-img {
+    border-radius: 0.7rem;
+    width: 11rem;
+    height: 16.5rem;
+}
+.content-img-extra {
+    border-radius: 0.7rem;
+    width: 9rem;
+}
+
+.content-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hd {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.4rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    align-items: center;
+    background-color: white;
+    color: black;
+    justify-self: center;
+}
+.hd-div {
+    display: flex;
+    position: relative;
+}
+
+.movie-name {
+    color: black;
+    width: 10.3rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.movie-name-extra {
+    color: black;
+    font-size: 1rem;
+    width: 8.7rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.movie-info {
+    font-size: 1rem;
+    color: black;
+}
+
+.card-info {
+    display: flex;
+    margin: 0.1rem 0.4rem;
+}
+.name-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.trending-div {
+    display: flex;
+    padding: 1rem;
+    margin-inline: 1rem 0;
+    align-items: center;
+}
+
+.btn-color {
+    background-color: blue;
+    color: white;
+}
+
+.trending-btn {
+    width: 5rem;
+    border-radius: 0.3rem;
+    border: none;
+    margin: 0.5rem;
+    height: 2rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+
+
+
